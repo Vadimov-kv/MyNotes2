@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recycleViewFragment">
+
+    <fragment
+        android:id="@+id/recycleViewFragment"
+        android:name="com.example.mynotes2.fragments.RecycleViewFragment"
+        android:label="fragment_recycle_view"
+        tools:layout="@layout/fragment_recycle_view" >
+        <action
+            android:id="@+id/action_recycleViewFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteEntityFragment2"
+        android:name="com.example.mynotes2.fragments.NoteEntityFragment"
+        android:label="fragment_note_entity"
+        tools:layout="@layout/fragment_note_entity" />
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.example.mynotes2.fragments.AddNoteFragment"
+        android:label="fragment_add_note"
+        tools:layout="@layout/fragment_add_note" />
+</navigation>
