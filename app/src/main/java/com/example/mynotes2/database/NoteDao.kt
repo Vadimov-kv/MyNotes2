@@ -7,7 +7,6 @@ import androidx.room.Update
 import com.example.mynotes2.database.NoteEntity
 import kotlinx.coroutines.flow.Flow
 
-
 @Dao
 interface NotesDatabaseDAO {
     @Insert

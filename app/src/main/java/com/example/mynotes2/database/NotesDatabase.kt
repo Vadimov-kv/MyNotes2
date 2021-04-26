@@ -8,7 +8,7 @@ import com.example.mynotes2.NotesDatabaseDAO
 
 @Database( entities = [NoteEntity::class],version = 1,exportSchema = false)
 abstract class NotesDatabase : RoomDatabase() {
-    abstract val notesDatabaseDAO: NotesDatabaseDAO
+    abstract fun notesDatabaseDAO(): NotesDatabaseDAO
 
     companion object {
 

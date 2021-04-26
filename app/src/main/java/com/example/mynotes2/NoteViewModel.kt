@@ -26,7 +26,7 @@ class NoteViewModel (private val repository: NoteRepository) : ViewModel() {
 
 }
 
-class WordViewModelFactory(private val repository: NoteRepository) : ViewModelProvider.Factory {
+class NoteViewModelFactory(private val repository: NoteRepository) : ViewModelProvider.Factory {
         override fun <T : ViewModel> create(modelClass: Class<T>): T {
             if (modelClass.isAssignableFrom(NoteViewModel::class.java)) {
                 @Suppress("UNCHECKED_CAST")

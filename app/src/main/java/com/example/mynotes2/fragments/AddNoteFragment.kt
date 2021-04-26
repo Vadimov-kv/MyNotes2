@@ -6,8 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.mynotes2.databinding.FragmentAddNoteBinding
-import com.example.mynotes2.databinding.FragmentNoteEntityBinding
-
 
 class AddNoteFragment : Fragment() {
     private var _binding: FragmentAddNoteBinding?= null
